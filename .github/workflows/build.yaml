@@ -27,7 +27,7 @@ jobs:
 
       - name: Change directory and execute command
         run: |
-          cd TEST1/poc-soapui-project.xml
+          cd SOAPUI-REST/TEST1/poc-soapui-project.xml
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
