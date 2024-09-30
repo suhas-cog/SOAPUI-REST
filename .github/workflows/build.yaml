@@ -34,26 +34,26 @@ jobs:
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
-        run:
+        run: |
         cd TEST2/poc-soapui-project.xml
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
-        run:
+        run: |
         cd TEST3/poc-soapui-project.xml
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
-        run:
+        run: |
         cd TEST4/poc-soapui-project.xml
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
-        run:
+        run: |
         cd TEST5/poc-soapui-project.xml
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
-        run:
+        run: |
         cd TEST6/poc-soapui-project.xml
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
