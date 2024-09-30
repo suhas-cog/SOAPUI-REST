@@ -30,30 +30,30 @@ jobs:
 
       - name: Change directory and execute command
         run: |
-        cd TEST1/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST1\poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
         run: |
-        cd TEST2/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST2/poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
         run: |
-        cd TEST3/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST3/poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
         run: |
-        cd TEST4/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST4/poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
         run: |
-        cd TEST5/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST5/poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
       - name: Change directory and execute command
         run: |
-        cd TEST6/poc-soapui-project.xml
-        mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          cd TEST6/poc-soapui-project.xml
+          mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
