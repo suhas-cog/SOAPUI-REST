@@ -18,6 +18,14 @@ jobs:
           distribution: 'temurin'
           architecture: x64
 
+      - name: Setup Maven Action
+        uses: s4u/setup-maven-action@3.9.8
+        with:
+          java-version: 8
+          maven-version: 3.9.8
+
+      - run: mvn -V 
+
       # Uncomment these steps if you want to run tests:
       # - name: Run tests with Maven
       #   run: mvn test
