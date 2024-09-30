@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Or another desired runner OS
+    runs-on: self-hosted  # Or another desired runner OS
 
     steps:
       - uses: actions/checkout@v4
