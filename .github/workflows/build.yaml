@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted  # Or another desired runner OS
+    runs-on: QA-API-ECS  
 
     steps:
       - uses: actions/checkout@v4
@@ -30,32 +30,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Change directory and execute command
+      - name: Run Task1 
         run: |
           cd TEST1
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
-      - name: Change directory and execute command
+      - name: Run Task2
         run: |
           cd TEST2
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
-      - name: Change directory and execute command
+      - name: Run Task3
         run: |
           cd TEST3
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
-      - name: Change directory and execute command
+      - name: Run Task4
         run: |
           cd TEST4
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
-      - name: Change directory and execute command
+      - name: Run Task5
         run: |
           cd TEST5
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
 
-      - name: Change directory and execute command
+      - name: Run Task6
         run: |
           cd TEST6
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
