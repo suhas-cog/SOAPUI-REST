@@ -1,4 +1,4 @@
-name: Build with Maven
+name: Parallel execution
 
 on:
   push:
