@@ -30,36 +30,54 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+  test1:
+    runs-on: self-hosted 
+    steps:  
       - name: Run Task1 
         run: |
           cd TEST1
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
           cd ..
 
+  test2:
+    runs-on: self-hosted 
+    steps: 
       - name: Run Task2
         run: |
           cd TEST2
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
           cd ..
 
+  test3:
+    runs-on: self-hosted 
+    steps: 
       - name: Run Task3
         run: |
           cd TEST3
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
           cd ..
 
+  test4:
+    runs-on: self-hosted 
+    steps: 
       - name: Run Task4
         run: |
           cd TEST4
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
           cd ..
 
+  test5:
+    runs-on: self-hosted 
+    steps: 
       - name: Run Task5
         run: |
           cd TEST5
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
           cd ..
 
+  test6:
+    runs-on: self-hosted 
+    steps: 
       - name: Run Task6
         run: |
           cd TEST6
