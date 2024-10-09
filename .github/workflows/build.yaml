@@ -2,8 +2,8 @@ name: Build with Maven
 
 on:
   push:
-    branches: [ main ]  # Change "main" to your main branch name if different
-  pull_request:  # Optional: Trigger on pull requests
+    branches: [ main ] 
+  # pull_request:  # Optional: Trigger on pull requests
 
 jobs:
   build:
