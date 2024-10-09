@@ -40,6 +40,7 @@ jobs:
         run: |
           cd TEST2
           mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
+          sleep 60
           cd ..
 
       - name: Run Task3
