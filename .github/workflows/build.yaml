@@ -5,7 +5,17 @@ on:
     branches: [ main ] 
   # pull_request:  # Optional: Trigger on pull requests
 
+env:
+QA: QA
 jobs:
+  workflowlevel:
+    name: print env variable 
+    runs-on: self-hosted
+    steps:
+    - name: Print variable here
+      run: |
+       echo printing QA environment variable is define here ${{ env.QA }}
+
   job1:
     name: testing tasks 1 2 3
     runs-on: self-hosted
@@ -26,7 +36,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Run Task1 
+      #This can be replaced with actual FT tasks
+    - name: Run Task1                          
       run: |
         cd TEST1
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
@@ -96,3 +107,25 @@ jobs:
         ls -a
         pwd
         echo "testing is completed"
+
+  # job3:
+  #   name: Actual workflow
+  #   runs-on: self-hosted
+      
+  #   steps:
+  #   - name: Check out
+  #     uses: actions/checkout@v3
+ 
+  #   - name: Setup Java
+  #     uses: actions/setup-java@v3
+  #     with:
+  #       java-version: '8'
+  #       distribution: 'corretto'
+  #       cache: 'maven'
+  #     id: test
+  #   - name: Rest_Add_Edit_Admin_Options
+  #     run: | 
+  #       cd Rest_Add_Edit_Admin_Options
+  #       python3 runWithMaven.py -hostport $hostport -userName $userName -password $password -environment $environment -secureProtocol YES -endPoint $endpoint -apiKey $apiKey -project $project 
+  #       cd ..
+  #     if: always()
