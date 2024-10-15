@@ -10,7 +10,7 @@ env:
 jobs:
   workflowlevel:
     name: print env variable 
-    runs-on: self-hosted
+    runs-on: linux-github-runner 
     steps:
     - name: Print variable here
       run: |
@@ -18,7 +18,7 @@ jobs:
 
   job1:
     name: testing tasks 1 2 3
-    runs-on: self-hosted
+    runs-on: linux-github-runner
       #ec2-instance-linux  # ec2 instance connect label
     steps:
     - uses: actions/checkout@v4
@@ -64,7 +64,7 @@ jobs:
   job2:
     name: testing tasks 4 5 6
    
-    runs-on: self-hosted
+    runs-on: linux-github-runner
       #ec2-instance-linux  # ec2 instance connect label
 
     steps:
@@ -110,7 +110,7 @@ jobs:
 
   # job3:
   #   name: Actual workflow
-  #   runs-on: self-hosted
+  #   runs-on: linux-github-runner
       
   #   steps:
   #   - name: Check out
