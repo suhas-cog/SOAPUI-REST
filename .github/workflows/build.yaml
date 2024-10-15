@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: dockerNode-hqug7
+    runs-on: self-hosted
     #ec2-instance-linux  # ec2 instance connect label
 
     steps:
