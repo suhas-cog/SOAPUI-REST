@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Print variable here
       run: |
-      echo printing QA environment variable is define here ${{ env.QA }}
+        echo printing QA environment variable is define here ${{ env.QA }}
 
   job1:
     name: testing tasks 1 2 3
