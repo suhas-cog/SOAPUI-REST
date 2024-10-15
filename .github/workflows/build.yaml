@@ -7,7 +7,8 @@ on:
 
 jobs:
   build:
-    runs-on: ec2-instance-linux  # ec2 instance connect label
+    runs-on: dockerNode-hqug7
+    #ec2-instance-linux  # ec2 instance connect label
 
     steps:
       - uses: actions/checkout@v4
