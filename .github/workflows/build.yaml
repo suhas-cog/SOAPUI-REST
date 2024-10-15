@@ -44,6 +44,10 @@ jobs:
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
         cd ..
 
+    - name: Run shell script
+      run: |
+        ./test.sh
+
 
   job2:
     name: testing tasks 4 5 6
@@ -84,3 +88,9 @@ jobs:
         cd TEST6
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
         cd ..
+
+    - name: Run shell script
+      run: |
+        yum install git -y
+        git --version
+        echo "testing is completed"
