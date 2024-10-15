@@ -1,6 +1,8 @@
 !/bin/bash
 
-yum install git -y
-git --version
+echo "test started"
+
+ls -a
+pwd
 
 echo "testing is completed"

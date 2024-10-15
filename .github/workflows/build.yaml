@@ -46,6 +46,7 @@ jobs:
 
     - name: Run shell script
       run: |
+        chmod 777 test.sh .
         ./test.sh
 
 
@@ -91,6 +92,7 @@ jobs:
 
     - name: Run shell script
       run: |
-        yum install git -y
-        git --version
+        echo "test started"
+        ls -a
+        pwd
         echo "testing is completed"
