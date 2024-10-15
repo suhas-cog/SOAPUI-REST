@@ -1,5 +1,6 @@
 name: Build with Maven
 on:
+  workflow_dispatch:
   push:
     branches: [ main ] 
   # pull_request:  # Optional: Trigger on pull requests
@@ -42,6 +43,7 @@ jobs:
         cd TEST3
         mvn com.smartbear.soapui:soapui-maven-plugin:5.5.0:test
         cd ..
+
 
   job2:
     name: testing tasks 4 5 6
