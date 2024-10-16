@@ -60,7 +60,6 @@ jobs:
         chmod 777 test.sh .
         ./test.sh
 
-
   job2:
     name: testing tasks 4 5 6
    
